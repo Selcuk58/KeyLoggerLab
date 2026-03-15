@@ -1,36 +1,36 @@
-KeyLoggerLab
+# KeyLoggerLab
 
 Educational Python project demonstrating how keyboard event logging works.
 
 This project logs keyboard events locally with timestamps and demonstrates concepts often discussed in cybersecurity and malware analysis such as:
 
-keyboard event hooks
+- Keyboard event hooks  
+- Local keystroke logging  
+- Windows autostart persistence via registry  
+- Background tasks using threading  
+- Simulated log file upload  
 
-local logging
+⚠️ **Important**
 
-Windows autostart persistence
+This project is created for **educational and research purposes only**.  
+All logged data remains on the local machine unless the code is modified.
 
-background tasks (threading)
+The goal of this project is to demonstrate how keyboard input monitoring works and to help understand techniques often analyzed in cybersecurity and malware research.
 
-simulated data upload
+---
 
-⚠️ Important:
-This project is for educational purposes only.
-All logged data remains on the local machine unless the user modifies the code.
+## Features
 
-Features
+- Logs keyboard events
+- Adds timestamps to each keystroke
+- Optional Windows autostart
+- Background upload simulation
+- Demonstrates threading in Python
 
-Logs keyboard events
+---
 
-Adds timestamps to each keystroke
+## Example Log Output
 
-Optional Windows autostart
-
-Background upload simulation
-
-Demonstrates threading in Python
-
-Example log output:
 
 ```
 2026-03-15 21:34:10 - h
