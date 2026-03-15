@@ -32,44 +32,44 @@ Demonstrates threading in Python
 
 Example log output:
 
-kkk
+```
 2026-03-15 21:34:10 - h
 2026-03-15 21:34:11 - e
 2026-03-15 21:34:11 - l
 2026-03-15 21:34:12 - l
 2026-03-15 21:34:12 - o
-kkk
+```
 
 Installation
 
 Clone the repository:
 
-kkk
+```
 git clone https://github.com/Selcuk58/KeyLoggerLab.git
 
 cd KeyLoggerLab
-kkk
+```
 
 Install dependencies:
 
-kkk
+```
 pip install keyboard requests
-kkk
+```
 
 Usage
 
 Run the program:
 
-kkk
+```
 python main.py
-kkk
+```
 
 When the program starts you will see a consent message:
 
-kkk
+```
 Educational KeyLogger Demo
 Allow this program to add itself to Windows autostart? (yes/no)
-kkk
+```
 
 If the user selects:
 
@@ -85,9 +85,9 @@ Ask the user for permission to enable autostart.
 
 Optionally create a registry entry:
 
-kkk
+```
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
-kkk
+```
 
 Start a keyboard hook using the keyboard Python library.
 
@@ -97,7 +97,7 @@ Run background tasks such as periodic uploads using threads.
 
 Project Structure
 
-kkk
+```
 KeyLoggerLab
 │
 ├ main.py
